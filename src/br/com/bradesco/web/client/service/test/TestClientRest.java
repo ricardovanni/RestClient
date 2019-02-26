@@ -16,18 +16,18 @@ import br.com.bradesco.web.client.service.RestClientResource;
 public class TestClientRest {
 
 	public static void main(String[] args) {
-//		testGet();
+		testGetHeadersRequestParams();
 //		testPostHeaders();
 //		testPost();
 //		testGetHeader();
-		testCreateJson();
+//		testCreateJson();
 	}
 
-	public static void testGet() {
+	public static void testGetHeadersRequestParams() {
 		String url = "http://192.168.245.212:8080/v1/previdencia/ofertaPlanoPrevidencia";
 
 		Map<String, String> headers = new HashMap<String, String>();
-		headers.put("canal", "3");
+		headers.put("canal", "2");
 		headers.put("origem", "0");
 		headers.put("usuario", "0");
 		headers.put("identificaFuncionario", "N");
